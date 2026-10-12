@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Una sorpresa para Marcela 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <main class="app">
+    <header class="top">
+      <span class="top-flower">🌸</span>
+      <span>Un detallito hecho con amor</span>
+      <span class="top-flower">🌸</span>
+    </header>
+
+    <section id="welcome" class="panel">
+      <div class="hero-icon">💌</div>
+      <p class="eyebrow">PARA MI CHAPARRITA HERMOSA</p>
+      <h1>¿Cuánto conoces a tu príncipe? 💖</h1>
+      <p class="intro">
+        Hola mi niña hermosa. Preparé algo especial para ti.
+        ¿Te atreves a demostrar cuánto conoces a tu Mike?
+      </p>
+
+      <div class="info-pills">
+        <span>🌷 10 preguntas</span>
+        <span>💗 1 punto cada una</span>
+        <span>🎁 Una sorpresa final</span>
+      </div>
+
+      <div class="notice">
+        <span>✨</span>
+        <p>
+          Responde con el corazón mi amor.
+          Necesitas sacar <strong>9/10 o más</strong>
+          para descubrir tu recompensa secreta.
+        </p>
+      </div>
+
+      <button id="startBtn" class="primary-btn">
+        ¡Comenzar el examen! 💕
+      </button>
+
+      <p class="little-note">Con amor, tu príncipe hermoso 🌙</p>
+    </section>
+
+    <section id="quiz" class="panel hidden">
+      <div class="quiz-top">
+        <span class="eyebrow">EL EXAMEN DEL AMOR 💗</span>
+        <span id="counter" class="counter">Pregunta 1 de 10</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress" class="progress-fill"></div>
+      </div>
+
+      <div class="question-icon">🌸</div>
+      <h2 id="questionText">Pregunta</h2>
+      <p class="instruction">Elige una sola respuesta, mi niña 💖</p>
+
+      <div id="answers" class="answers"></div>
+
+      <p id="selectionHint" class="selection-hint" aria-live="polite">
+        Toca la respuesta que consideres correcta.
+      </p>
+
+      <button id="nextBtn" class="primary-btn" disabled>
+        Siguiente pregunta 💗
+      </button>
+
+      <p class="little-note">Tú puedes mi chaparrita 🌷</p>
+    </section>
+
+    <section id="result" class="panel hidden" aria-live="polite">
+      <div id="resultIcon" class="hero-icon">💖</div>
+      <p class="eyebrow">RESULTADO FINAL</p>
+      <h1 id="resultTitle">¡Terminaste!</h1>
+
+      <div class="score-circle">
+        <span id="score">0</span>
+        <span class="score-total">/10</span>
+      </div>
+
+      <p id="resultText" class="intro"></p>
+
+      <div id="loveLetter" class="love-letter hidden">
+        <div class="letter-decoration">🌷 💖 🌷</div>
+        <h2>Una cartita para ti mi princesa hermosa</h2>
+
+        <div class="letter-body">
+          <p><strong>Felicidades mi chaparrita hermosa... Lograste sacar buena nota condenada</strong></p>
+
+          <p>Y pues... Nada más te escribo este pequeño mensaje para recordarte lo mucho que te amo y lo especial que eres para mí 💖✨.</p>
+
+          <p>Desde que llegaste a mi vida cambió completamente para bien, nunca pensé conocer a una chica tan linda, divertida e interesante como lo eres tú mi amor 💖✨. Junto a ti parece que el sol brilla más, los colores se ven más vivos y la vida parece tener más sentido 💖✨...</p>
+
+          <p>Desde el día que nos conocimos hasta la actualidad no soy el mismo Mike que solía ser... Ahora soy un nuevo yo formado con cada una de las piezas que conocen quién es Marcela 💖✨</p>
+
+          <p class="last-line">Te amo mi princesa hermosa y quiero que sepas que mi amor va más allá de las estrellas y los planetas 💖✨</p>
+        </div>
+
+        <div class="letter-decoration">🌌 💗 🌌</div>
+        <p class="signature">Con todo mi amor, tu cachorrito 💖</p>
+      </div>
+
+      <div id="retryMessage" class="retry-message hidden">
+        <span>😓🌸</span>
+        <p>
+          ¡No te rindas mi niña! Puedes volver a intentarlo.
+          Estudia un poquito más a tu Mike y vuelve a demostrar
+          cuánto lo conoces. 💖
+        </p>
+      </div>
+
+      <button id="retryBtn" class="primary-btn hidden">
+        Volver a intentarlo 🔄
+      </button>
+
+      <p class="little-note">Hecho especialmente para ti 💕</p>
+    </section>
+
+    <footer>
+      <span>Hecho con 💖 por Mike</span>
+      <span>🌸 ✨ 🌸</span>
+    </footer>
+  </main>
+</body>
+</html>
